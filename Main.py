@@ -23,12 +23,74 @@ def nestedDict(strList):
             parity = "even"
         else:
             parity = "odd"
-
-        listStats = {"Length":length, "Parity":parity}
+    
+        listStats = {"length":length, "parity":parity}
+        analyzedDict[i] = listStats
 
     print(listStats)
     print(analyzedDict)
 
-test = ["Data", "Science"]
+# Question 3
 
-nestedDict(test)
+def safeFunction(listPairs):
+    listPowers = []
+
+    for base, exponent in listPairs:
+        if exponent >= 0:
+            listPowers.append(base**exponent)
+
+    print(listPowers)
+
+# Question 4
+
+def sortedSearch():
+    from random import random
+
+    values = [random() for i in range(20)]
+    x = random()
+
+    firstMatchingIdx = 0
+    counter = 0
+    sortedList = sorted(values)
+
+    finalIndex = len(sortedList)-1
+
+    for i in range(finalIndex):
+        if sortedList[i] >= x and counter == 0:
+            firstMatchingIdx = i
+            counter += 1
+    
+    print(sortedList, x, firstMatchingIdx)
+
+# Question 5
+
+def circleAreaCoverage(circleOneRadii, circleTwoRadii):
+    import math
+    pi = math.pi
+
+    if circleOneRadii < 0 or circleTwoRadii < 0 :
+        return "One of the radii you have given is invalid (i.e smaller than 0)."
+
+    circleOneRadiusSqrd = circleOneRadii**2
+    circleOneArea = pi*circleOneRadiusSqrd
+
+    circleTwoRadiusSqrd = circleTwoRadii**2
+    circleTwoArea = pi*circleTwoRadiusSqrd
+
+    largestCircle = max(circleOneArea, circleTwoArea)
+    smallestCircle = min(circleOneArea, circleTwoArea)
+
+    percentileAreaCoverage = float(smallestCircle/largestCircle)*100
+    
+    return format(percentileAreaCoverage, ".2f")
+
+print(circleAreaCoverage(2, 3))
+
+# Question 6
+
+def distributionAnalysis(numbersList):
+    keySortedDict = {}
+    pass
+
+numList = [3, 1, 2, 3, 4, 2]
+distributionAnalysis(numList)
