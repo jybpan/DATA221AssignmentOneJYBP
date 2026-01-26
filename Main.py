@@ -84,13 +84,46 @@ def circleAreaCoverage(circleOneRadii, circleTwoRadii):
     
     return format(percentileAreaCoverage, ".2f")
 
-print(circleAreaCoverage(2, 3))
-
 # Question 6
 
 def distributionAnalysis(numbersList):
+    keyPercentageDict = {k: None for k in numbersList}
     keySortedDict = {}
-    pass
+    count = 0
 
-numList = [3, 1, 2, 3, 4, 2]
-distributionAnalysis(numList)
+    print(keyPercentageDict)
+    print(keyPercentageDict.keys())
+
+    for i in keyPercentageDict.keys():
+        for j in keyPercentageDict.keys():
+            if i >= j:
+                count += 1
+                print("Count: ",count)
+        numPercentile = count/len(keyPercentageDict)
+        print("Percentage: ", numPercentile)
+        keyPercentageDict[i] = numPercentile
+        count = 0
+
+    for k in sorted(keyPercentageDict.keys()):
+        keySortedDict[k] = keyPercentageDict[k]
+
+    return keySortedDict
+
+# Question 7
+
+def timeConversion():
+    userTimeInput = int(input("Give time in seconds since midnight to be converted. "))
+
+    seconds = userTimeInput
+    minutes = seconds/60
+    hours = minutes/60 
+    meridianTime = ""
+
+    if hours > 12:
+        meridianTime = "PM"
+    else:
+        meridianTime = "AM"
+
+    return(f"\nIt has been {seconds} seconds since Midnight, or:\n{round(minutes, 4)} Minutes\n{round(hours, 4)} Hours\nAnd it is in the {meridianTime}.")
+
+print(timeConversion())
