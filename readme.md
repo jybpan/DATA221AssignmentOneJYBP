@@ -2,7 +2,7 @@
 
 2. Simple for loop iteration in order to analyze, and convert the list of words into a dictionary with the desired analyzation.
 
-3. Uses a fancy for loop in order to iterate through the list in a "parallel" fashion, calculating the powers, and storing them in another list in the process.
+3. Uses a fancy for loop in order to iterate through the list in a “parallel” fashion, calculating the powers, and storing them in another list in the process.
 
 4. Simple DSA problem, uses a for loop and an if to compare the values with x.
 
