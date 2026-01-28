@@ -13,3 +13,5 @@
 7. Simple time conversion, theres nothing fancy. The f string is used to round though.
 
 8. This is just calculating the average value of each row and adding it as a new column in the pandas dataframe.
+
+Main.py is where most of the work happened before I separated the files into their individual ones, to satisfy the assignment requirements.
