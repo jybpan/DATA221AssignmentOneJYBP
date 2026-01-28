@@ -1,8 +1,8 @@
-def nestedDict(strList):
+def nestedDict(stringList):
     analyzedDict = {}
     listStats = {}
 
-    for i in strList:
+    for i in stringList:
         length = len(i)
 
         if(length % 2 == 0):
