@@ -4,15 +4,13 @@ def sortedSearch():
     values = [random() for i in range(20)]
     x = random()
 
-    firstMatchingIdx = 0
+    firstMatchingIndex = 0
     counter = 0
-    sortedList = sorted(values)
+    sortedRandomList = sorted(randomValues)
 
-    finalIndex = len(sortedList)-1
+    finalListIndex = len(sortedRandomList)-1
 
-    for i in range(finalIndex):
-        if sortedList[i] >= x and counter == 0:
-            firstMatchingIdx = i
+    for index in range(finalListIndex):
+        if sortedRandomList[index] >= x and counter == 0:
+            firstMatchingIndex = i
             counter += 1
-    
-    print(sortedList, x, firstMatchingIdx)

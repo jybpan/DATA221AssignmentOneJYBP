@@ -1,17 +1,14 @@
-def nestedDict(stringList):
-    analyzedDict = {}
-    listStats = {}
+def listWordAnalyzation(parameterList):
+    analyzedDictionary = {}
+    listStatistics = {}
 
-    for i in stringList:
-        length = len(i)
+    for element in parameterList:
+        elementLength = len(element)
 
-        if(length % 2 == 0):
-            parity = "even"
+        if (elementLength % 2 == 0):
+            wordParity = "even"
         else:
-            parity = "odd"
+            wordParity = "odd"
     
-        listStats = {"length":length, "parity":parity}
-        analyzedDict[i] = listStats
-
-    print(listStats)
-    print(analyzedDict)
+        listStatistics = {"length":elementLength, "parity":wordParity}
+        analyzedDictionary[i] = listStatistics

@@ -1,22 +1,21 @@
 def distributionAnalysis(numbersList):
-    keyPercentageDict = {k: None for k in numbersList}
-    keySortedDict = {}
+    parsedDictionary = {k: None for k in numbersList}
+    keySortedDictionary = {}
     count = 0
 
-    print(keyPercentageDict)
-    print(keyPercentageDict.keys())
+    parsedDictionaryKeys = parsedDictionary.keys()
 
-    for i in keyPercentageDict.keys():
-        for j in keyPercentageDict.keys():
-            if i >= j:
+    for comparedElementOne in parsedDictionaryKeys:
+        for comparedElementTwo in parsedDictionaryKeys:
+            if comparedElementOne >= comparedElementTwo:
                 count += 1
-                print("Count: ",count)
-        numPercentile = count/len(keyPercentageDict)
-        print("Percentage: ", numPercentile)
-        keyPercentageDict[i] = numPercentile
-        count = 0
 
-    for k in sorted(keyPercentageDict.keys()):
-        keySortedDict[k] = keyPercentageDict[k]
+        numericPercentile = count/len(parsedDictionary)
+        parsedDictionary[i] = numericPercentile
 
-    return keySortedDict
+        count = 0 # Reset the Count
+
+    for key in sorted(parsedDictionaryKeys):
+        keySortedDictionary[key] = parsedDictionary[key]
+
+    return keySortedDictionary
