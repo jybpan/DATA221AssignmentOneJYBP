@@ -135,7 +135,7 @@ def dataframeExtrapolation():
         "C": [800, 150, 400, 210]
     }
 
-    df = pd.DataFrame(data=data)
+    df = pd.ataFrame(data=data)
     df['mean'] = df.mean(axis=1)
 
 

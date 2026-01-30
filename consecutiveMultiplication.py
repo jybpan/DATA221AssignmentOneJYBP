@@ -1,9 +1,8 @@
-product = 1
+finalProduct = 0
 currentNumber = 1
-multiplierThreshold = 100
 
-while product <= multiplierThreshold:
-    product = currentNumber*(currentNumber+1)
+while finalProduct <= multThreshold:
+    finalProduct = currentNumber*(currentNumber+1)
     currentNumber += 1
 
-print("Final Product: ", product, "Integer Exceeding Threshold: ", currentNumber+1)
+print("Final Product: ", finalProduct, "Integer Exceeding Threshold: ", currentNumber+1)

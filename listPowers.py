@@ -1,8 +1,8 @@
-def listPairPowerCompute(parameterListPairs):
-    parameterListPairPowers = []
+def safeFunction(listPairs):
+    listPowers = []
 
     for base, exponent in listPairs:
         if exponent >= 0:
-            parameterListPairPowers.append(base**exponent)
+            listPowers.append(base**exponent)
 
-    print(parameterListPairPowers)
+    print(listPowers)

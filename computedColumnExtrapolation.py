@@ -8,3 +8,4 @@ data = {
 
 df = pd.DataFrame(data=data)
 df['mean'] = df.mean(axis=1)
+print(df)

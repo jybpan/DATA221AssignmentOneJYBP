@@ -1,5 +1,3 @@
-## COMMIT MESSAGES ON AND PAST JAN 26TH, 2026 WERE CREATED PRIOR TO THE LECTURE ON PROPER GIT COMMIT MESSAGES.
-
 1. Multiplies consecutive integers starting from 1. Uses a while loop in order to accomplish this.
 
 2. Simple for loop iteration in order to analyze, and convert the list of words into a dictionary with the desired analyzation.
@@ -17,4 +15,3 @@
 8. This is just calculating the average value of each row and adding it as a new column in the pandas dataframe.
 
 Main.py is where most of the work happened before I separated the files into their individual ones, to satisfy the assignment requirements.
-
