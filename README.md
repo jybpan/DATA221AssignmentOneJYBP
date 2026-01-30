@@ -1,3 +1,5 @@
+## COMMITS AND THEIR MESSAGES ON OR PAST JANUARY 26TH, 2025 WERE DONE PRIOR TO THE LECTURE ON PROPER COMMIT MESSAGES.
+
 1. Multiplies consecutive integers starting from 1. Uses a while loop in order to accomplish this.
 
 2. Simple for loop iteration in order to analyze, and convert the list of words into a dictionary with the desired analyzation.
